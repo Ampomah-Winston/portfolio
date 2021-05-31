@@ -7,12 +7,89 @@ body{
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
+	height: 150px;
 	max-height: 30%;
 	min-height: 20%;
 	background-color: #eeeeee;
+	float: left;	
 }
 
 .nav > ul{
 	list-style: none;
-	list-style-position: outside;
+	display: inline-grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;	
+	position: absolute;
+	right: 5%;
+	top: 50px;
+}
+
+.nav > ul > li{	
+	margin: 2px;
+	color: gray;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	font-family: monospace;	
+}
+
+.nav > .me > {
+	position: relative;
+}
+
+.nav > .me > .name {
+	position: absolute;
+	left: 5%;
+	top: 2%;
+}
+
+.nav > .me > .name > p{
+	color: gray;
+	font: 40px monospace ;
+}
+
+.container{
+	background-color: #46edf2;
+	width: 100%;
+	height: 550px;
+	clear: both;
+
+	display: grid;
+	grid-template-columns: 0.7fr 3fr;
+}
+
+.container_item {
+	background-image: url(../images/pexels-ken-cheung-6559897.jpg);
+}
+
+.container_item > .top{
+	width: 100%;
+	height: 10%;
+	background-color: darkcyan;
+}
+
+.container_item > .detail{	
+	width: 100%;
+	height: 85%;	
+}
+
+.detail-list{
+	list-style: none;	
+	padding: 0px;
+	margin-top: 50px;
+	margin-left: 20px;
+	border-radius: 10px;
+}
+
+.detail-list .proj{	
+	height: 50px;		
+	margin: 5px auto;
+	cursor: pointer;
+	text-align: center;
+	background: linear-gradient(to right, whitesmoke, lightblue);
+
+}
+
+.detail-list .proj: hover{
+	transition: 0.5s;
+	background-color: darkcyan;
 }
