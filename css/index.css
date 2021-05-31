@@ -52,13 +52,14 @@ body{
 	width: 100%;
 	height: 550px;
 	clear: both;
-
+	background-image: url(../images/pexels-ken-cheung-6559897.jpg);
 	display: grid;
 	grid-template-columns: 0.7fr 3fr;
+	grid-column-gap: 10px;
 }
 
 .container_item {
-	background-image: url(../images/pexels-ken-cheung-6559897.jpg);
+	
 }
 
 .container_item > .top{
@@ -80,16 +81,40 @@ body{
 	border-radius: 10px;
 }
 
-.detail-list .proj{	
+ul li.proj{	
 	height: 50px;		
-	margin: 5px auto;
+	margin: 7px auto;
 	cursor: pointer;
-	text-align: center;
-	background: linear-gradient(to right, whitesmoke, lightblue);
+	text-align: center;	
+	font-family: monospace;
+	font-size: 20px;
+	color: black;
+	border:1px dashed darkgray;
+} 
 
+ul li.proj:hover{	
+	transition: 0.1s;
+	background-color: red;
 }
 
-.detail-list .proj: hover{
-	transition: 0.5s;
-	background-color: darkcyan;
+ul li.proj:after{
+    content: "";	
+	opacity: 0;
+  	transition: all 0.8s
+}
+
+ul li.proj:active: after{	
+	padding: 0px;
+	margin: 0px;
+	opacity: 1;
+  	transition: all 0.8s
+}
+
+.frame{
+	width: 95%;
+	height: 85%;
+	border:1px dashed darkgray;
+
+	margin-top: 50px;
+	margin-left: 15px;
 }
